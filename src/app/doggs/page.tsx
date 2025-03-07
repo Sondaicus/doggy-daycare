@@ -1,4 +1,4 @@
-import DogCardObject from "../tsx/doggs_card_object";
+import DogCardObject from "../tsx/doggs_card_column_object";
 import {ListPageLogo} from "../tsx/logos";
 import {ButtonSearch , ButtonFilter} from "../tsx/menu_buttons";
 import {MaximiseDistanceWidth , MaximiseDistanceHeight} from "../tsx/distance_maximising_elements";
