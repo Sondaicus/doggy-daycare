@@ -4,35 +4,64 @@
     width: auto;
     height: auto;
     margin: auto;
+    font-family: Inter;
     box-sizing: border-box;
 }
 
-.all_encompasing_element
+.all_encompasing-element
 {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
 }
 
-.program_encompasing_element
+.program_encompasing-element
 {
     position: relative;
-    height: min-content;
     width: min-content;
-
-    /*
-    min-width: 390px;
-    */
-    /*background-color: rgb(254, 210, 83);*/
-
-    background-color: rgb(83, 143, 254);
+    height: min-content;
+    background-color: rgb(252, 213, 82);
+    width: 390px;
 }
 
-.croppedDogImage_parentElement
+.program_encompasing-element[data-page_type=list]
 {
-   width: max-content;
-   height: max-content;
+    display: grid;
+    grid-template-columns: auto;
+    
+    header
+    {
+        height: 162px;
+    }
+}
+
+.page_encompasing-element
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.page_encompasing-element[data-page_type=start]
+{
+    height: 844px;
+}
+
+.page_encompasing-element[data-page_type=list]
+{
+    width: 268px;
+
+    header
+    {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+}
+
+@font-face 
+{
+    font-family: Inter;
+    src: url("../fonts/inter/Inter Variable/Inter.ttf");
 }
 
 img
@@ -40,19 +69,96 @@ img
     object-fit: cover;
 }
 
-.croppedDogImage_parentElement
+.centralizing_content_encompasing-element
 {
-   width: max-content;
-   height: max-content;
+    height: max-content;
+    width: max-content;
 }
 
-.croppedDogImage_source
+.logo_parent-element
 {
-    background-color: rgb(255, 204, 44);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 48px;
 }
 
-.startPageFooterImage_display
+.logo_parent-element[data-type_of_logo=start_page]
+{
+    width: 276px;
+    top: 40px;
+}
+
+.logo_parent-element[data-type_of_logo=list_page]
+{
+    width: 214px;
+    top: 20px;
+}
+
+[data-element_style=button]
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 143, 171);
+    border-radius: 8px;
+}
+
+.dog-list-page_link
+{
+    width: 155px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    top: 14px;
+    padding: 13px;
+}
+
+.cropped-dog-image_display
 {
     width: 390px;
     height: 396px;
+    bottom: -47px;
+    filter: brightness(108%) contrast(92%) hue-rotate(-8deg) saturate(90%) sepia(6%);
+}
+
+.dog-list-page_header-buttons_encompasing-element
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dog-list-page_header-button
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 1rem;
+    top: 9px;
+}
+
+.font-awesome-icon_header-button
+{
+    width: 18px;
+    height: 18px;
+}
+
+.dog-list-page_header-button_paragraph-element
+{
+    margin-left: 10px;
+}
+
+.dog-list-page_main-content_encompasing-element
+{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 25px;
+    padding-bottom: 50px;
+}
+
+DogCardObject
+{
+    
 }

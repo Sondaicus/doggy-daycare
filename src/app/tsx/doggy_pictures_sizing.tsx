@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 
 export default function CroppedDogImage()
 {
     {
         useEffect(() => {
-            let croppedDogImage_parentElements = document.getElementsByClassName("croppedDogImage_parentElement");
+            let croppedDogImage_parentElements = document.getElementsByClassName("cropped-dog-image_parent-element");
 
             for(let i_0 = 0; i_0 < croppedDogImage_parentElements.length; i_0++)
             {
@@ -20,7 +20,7 @@ export default function CroppedDogImage()
                 {
                     let current_CroppedDogImage_parentElement_attribute = current_CroppedDogImage_parentElement_attributes[i_1];
 
-                    if(current_CroppedDogImage_parentElement_attribute.nodeName == "data-displaybeenset")
+                    if(current_CroppedDogImage_parentElement_attribute.nodeName == "data-display_been_set")
                     {
                         current_CroppedDogImage_parentElement_attribute_dataDisplayBeenSet_value = current_CroppedDogImage_parentElement_attribute.nodeValue;
                         current_CroppedDogImage_parentElement_attribute_dataDisplayBeenSet_index = i_1;
@@ -40,11 +40,11 @@ export default function CroppedDogImage()
                     {
                         let croppedDogImage_parentElement_childNode = croppedDogImage_parentElement_childNodes[i_0];
 
-                        if(croppedDogImage_parentElement_childNode.className == "croppedDogImage_display")
+                        if(croppedDogImage_parentElement_childNode.className == "cropped-dog-image_display")
                         {
                             croppedDogImage_display = croppedDogImage_parentElement_childNode as HTMLCanvasElement;
                         }
-                        if(croppedDogImage_parentElement_childNode.className == "croppedDogImage_source")
+                        if(croppedDogImage_parentElement_childNode.className == "cropped-dog-image_source")
                         {
                             croppedDogImage_source = croppedDogImage_parentElement_childNode as HTMLImageElement;
                         }
@@ -61,9 +61,9 @@ export default function CroppedDogImage()
         });
     }
     return (
-        <div className="croppedDogImage_parentElement" data-displayBeenSet="false">
-            <canvas className="croppedDogImage_display" width="390" height="396"></canvas>
-            <Image className="croppedDogImage_source" src="/png/3f374d705a2de11e012f09e86bcac539.png" width={792} height={396} alt="792*396" />
+        <div className="cropped-dog-image_parent-element" data-display_been_set="false">
+            <canvas className="cropped-dog-image_display" width="390" height="396"></canvas>
+            <Image className="cropped-dog-image_source" src="/png/3f374d705a2de11e012f09e86bcac539.png" width={792} height={396} alt="792*396" />
         </div>
     );
 }
