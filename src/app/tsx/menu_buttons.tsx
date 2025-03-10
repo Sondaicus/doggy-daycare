@@ -1,6 +1,3 @@
-import DogCardObject from "../tsx/doggs_card_object";
-import {ListPageLogo} from "../tsx/logos";
-import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass , faFilter} from '@fortawesome/free-solid-svg-icons'
 
