@@ -9,7 +9,7 @@ export default function DogCardColumnObject(dog_object)
     let dog = new Dog(dog_object);
    
     return(
-        <div className="dog_card_ecompasing_element">
+        <div className="dog_card_ecompasing_element" data-chip_number="">
             <p>dog.name</p>
             <section></section>
         </div>
