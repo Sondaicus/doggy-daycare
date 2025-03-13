@@ -17,7 +17,7 @@ export default function Home()
           </header>
           <main>
             <div className="centralizing_content_encompasing-element">
-              <Link className="dog-list-page_link" data-element_style="button" href="/doggs">OUR DOGS</Link>
+              <Link className="dog-list-page_link" data-element_style="button" href="/dog_list_pages">OUR DOGS</Link>
             </div>
           </main>
           <footer>

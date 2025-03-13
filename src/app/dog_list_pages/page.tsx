@@ -8,14 +8,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass , faFilter} from '@fortawesome/free-solid-svg-icons'
 import fetchAllDogs from "../scripts/typescript/read_api";
 import Dog from "../scripts/typescript/dog_class";
+import { DogCardColumnHolder } from "../tsx/dogs_card_column_encompasing_element";
+
+declare var document: Document;
 
 
-export default async function DoggsPage() 
+export default async function DogsPage() 
 {
- 
-    const dogs = await fetchAllDogs();
 
-    console.log(dogs);
+
+  const dogs = await fetchAllDogs();
+  
+
+  
 
   return (
     <div className="all_encompasing-element">
@@ -30,8 +35,7 @@ export default async function DoggsPage()
             </div>
           </header>
           <main>
-            <section className="dog-list-page_main-content_encompasing-element">
-            </section>
+            <DogCardColumnHolder fetched_dogs={dogs} />
           </main>
           <footer>
           </footer>
@@ -39,4 +43,5 @@ export default async function DoggsPage()
       </div>
     </div>
   );
+
 }
