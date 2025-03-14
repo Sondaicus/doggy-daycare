@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import CroppedDogImage from "./tsx/doggy_pictures_sizing";
 import Link from "next/link";
-import ClickOnButton from "./tsx/buttonTest";
 import {StartPageLogo} from "./tsx/logos";
 
 export default function Home() 

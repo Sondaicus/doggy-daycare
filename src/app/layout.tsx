@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono} from "next/font/google";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./globals.css";
 import "./css/styles.css";
 
