@@ -1,25 +1,13 @@
-
-
-import DogCardObject from "../tsx/doggs_card_column_object";
 import {ListPageLogo} from "../tsx/logos";
 import {ButtonSearch , ButtonFilter} from "../tsx/menu_buttons";
-import {MaximiseDistanceWidth , MaximiseDistanceHeight} from "../tsx/distance_maximising_elements";
+import {MaximiseDistanceWidth} from "../tsx/distance_maximising_elements";
 import DogCardColumnObject from "../tsx/doggs_card_column_object";
-import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass , faFilter} from '@fortawesome/free-solid-svg-icons'
 import fetchAllDogs from "../scripts/typescript/read_api";
-import Dog from "../scripts/typescript/dog_interface";
-import { DogCardColumnHolder } from "../tsx/dogs_card_column_encompasing_element";
+import { Dog } from "@/app/scripts/typescript/dog_interface";
 
 export default async function DogsPage() 
 {
-
-
   const dogs: Dog[] = await fetchAllDogs();
-  
-
-  console.log(dogs);
 
   return (
     <div className="all_encompasing-element">
@@ -42,5 +30,4 @@ export default async function DogsPage()
       </div>
     </div>
   );
-
 }

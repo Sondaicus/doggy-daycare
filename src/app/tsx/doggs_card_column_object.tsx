@@ -1,22 +1,20 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import {Dog, Owner} from "../scripts/typescript/dog_interface";
 import Link from "next/link";
-import { useRouter } from 'next/router'
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMars , faVenus} from '@fortawesome/free-solid-svg-icons'
 import {MaximiseDistanceWidth , MaximiseDistanceHeight} from "../tsx/distance_maximising_elements";
+import React from 'react'
 
 export default function DogCardColumnObject(dog_object)
 {
     let dog = dog_object.dog_object;
-    let href_path = "../dog_page/" + dog.chipNumber + "/page.tsx";
+    let href_path = "/dog_list_pages/dog_page/" + dog.chipNumber;
     let dog_sex_symbol = "NON_DEFINED_SEX";
     let dog_card_border_color = "rgb(0, 0, 0)";
     let randomNumberMin = 0;
-    let randomNumberMax = 5;
+    let randomNumberMax = 14;
     let randomNumber = Math.floor(Math.random() * (randomNumberMax - randomNumberMin + 1)) + randomNumberMin;
 
     if(dog.sex == "male")
@@ -136,5 +134,4 @@ export default function DogCardColumnObject(dog_object)
             </Link>
         </div>
     );
-  
 }

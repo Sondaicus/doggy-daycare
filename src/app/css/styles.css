@@ -13,7 +13,7 @@
     position: absolute;
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    height: 100vp;
+    height: max-content;
 }
 
 .program_encompasing-element
@@ -118,6 +118,12 @@ img
     width: 390px;
     height: 396px;
     bottom: -47px;
+
+    /*
+    https://get-color.com/color-wheel/
+    https://codepen.io/derekbtw/pen/oGjPZb
+  
+    */
     filter: brightness(108%) contrast(92%) hue-rotate(-8deg) saturate(90%) sepia(6%);
 }
 
@@ -237,4 +243,181 @@ img
 {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+.dog_page_ecompasing-element
+{
+    position: relative;
+    height: 842px;
+    width: 390px;
+    display: grid;
+    grid-template-rows: 322px 466px 54px;
+    background-color: rgb(255, 255, 255);
+    
+    header
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
+        height: 54px;
+        background-color: rgb(255, 255, 0);
+    }
+}
+
+.dog_page_image
+{
+    height: 322px;
+    width: 390px;
+}
+
+.dog_page_main_name-present_ecompasing-element
+{
+    background-color: rgb(76, 143, 171);
+    height: 73px;
+    width: 100%;
+}
+
+.dog_page_main_info_ecompasing-element
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 466px;
+    width: 100%;
+}
+
+.dog_page_main_content-ecompasing-element
+{
+    width: 358px;
+    height: 100%;
+}
+
+.dog_page_name-element
+{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    top: 7px;
+}
+
+.dog-is-present_toggle-button_ecompasing-element
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 60px;
+    top: 8px;
+}
+
+.dog-is-present_paragraph
+{
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.dog_page_name-present_ecompasing-element
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dog-is-present_button_ecompasing-element
+{
+    border-radius: 25px;
+    width: 62px;
+    height: 28px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dog-is-present_bgc_ecompasing-element
+{
+    display: contents;
+}
+
+.dog-is-present_button-status_ecompasing-element
+{
+    top: 1px;
+    border-radius: 25px;
+    width: 60px;
+    height: 26px;
+    background-color: inherit;
+    opacity: 32%;
+}
+
+.dog-is-present_button-status_orb
+{
+    bottom: 25px;
+    width: 27px;
+    height: 26px;
+    border-radius: 25px;
+    background-color: inherit;
+}
+
+.dog_info-field_encompasing-element
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.dog_info-field_header-element
+{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.dog_info-field_value-element
+{
+    font-size: 12px;
+}
+
+.dog_page_main_info_content-ecompasing-element
+{
+    width: 100%;
+    height: 100%;
+}
+
+.dog_listed-route-page_ecompasing-element
+{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: chartreuse;
+    height: 100%;
+    width: min-content;
+}
+
+.dog_listed-route-page_link
+{
+    display: grid;
+    grid-template-columns: 10px 10px;
+    width:32px;
+}
+
+.dog-list-other-icon
+{
+    height: 26px;
+}
+
+.dog-list-other-icon[data-displayType=normal]
+{
+    color: rgb(0, 0, 0);
+}
+
+.dog-list-other-icon[data-displayType=dead-end]
+{
+    color: rgb(127, 127, 127);
+}
+
+.dog_number-in-list_ecompasing-element
+{
+    font-size: 12px;
 }
